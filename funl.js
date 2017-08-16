@@ -41,8 +41,8 @@ class FUNL {
     this.router.use(handler);
   }
 
-  listen(port) {
-    this.server.listen(port);
+  listen(port, callback) {
+    this.server.listen(port, callback);
   }
 }
 
