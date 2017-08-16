@@ -1,2 +1,4 @@
-# funl
-Faster and baddest HTTP/2 framework for Node.js
+![funl](./logo.png)
+----
+Fastest, baddest and most experimental HTTP/2 framework for Node.js
+----
