@@ -10,7 +10,7 @@ Fastest, baddest and most experimental HTTP/2 framework for Node.js
 Install from npm, note that **funl** requires Node 8.4.0 and above with the `--expose-http2` for 8.x.x versions.
 
 ```
-$ npm install funl
+$ npm install funl --save
 ```
 
 ## Write a **funl** Http/2 server
