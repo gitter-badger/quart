@@ -4,7 +4,7 @@ const Router = require('./lib/Router');
 /**
  * funl web server
  */
-class FUNL {
+class Funl {
   /**
    * Creates a new funl instance
    * @param {object} [options] - Options passed to createSecureServer such as `cert` and `key`
@@ -60,4 +60,4 @@ class FUNL {
   }
 }
 
-module.exports = FUNL;
+module.exports = Funl;
