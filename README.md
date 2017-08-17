@@ -17,7 +17,10 @@ $ npm install funl
 
 ```javascript
 const Funl = require('funl');
-const app = new Funl();
+const app = new Funl({
+  cert: "", // SSL Cert
+  key: "" // SSL Key
+});
 
 app.on('/', async (stream) => {
   stream.end("Hello World!");
