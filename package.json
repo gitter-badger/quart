@@ -18,6 +18,9 @@
     "funl.js",
     "funl"
   ],
+  "engines": {
+    "node" : ">=8.4.0"
+  },
   "author": "Schahriar SaffarShargh <info@schahriar.com>",
   "license": "MIT",
   "bugs": {
