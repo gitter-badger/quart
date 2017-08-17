@@ -17,28 +17,16 @@ class FUNL {
     this.server.on('stream', (stream, headers) => this.router.routeStream(stream, headers));
   }
 
-  get(route, handler) {
-    this.router.add("GET", route, handler);
+  on(route, handler) {
+    this.router.on(route, handler);
   }
 
-  post(route, handler) {
-    this.router.add("POST", route, handler);
+  preflight(handler) {
+    this.router.preflight(handler);
   }
 
-  put(route, handler) {
-    this.router.add("PUT", route, handler);
-  }
-
-  delete(route, handler) {
-    this.router.add("DELETE", route, handler);
-  }
-
-  any(route, handler) {
-    this.router.add("ANY", route, handler);
-  }
-
-  use(route) {
-    this.router.use(handler);
+  postflight(handler) {
+    this.router.postflight(handler);
   }
 
   listen(port, callback) {
