@@ -4,6 +4,7 @@
   "description": "Fastest, baddest and most experimental HTTP/2 framework for Node.js",
   "main": "Quart.js",
   "scripts": {
+    "pretest": "mkdir ./test/certs; cd ./test/certs; ../make-certs.sh; cd ../",
     "test": "node --expose-http2 ./node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/init.js",
     "posttest": "codeclimate-test-reporter < coverage/lcov.info"
   },
