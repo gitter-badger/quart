@@ -28,7 +28,7 @@ app.on('/', async (stream) => {
 
 app.listen(8080);
 ```
-### A short bit on Multiplexing and Stream Objet
+### A short bit on Multiplexing and Stream Object
 Http/2 has many differences from Http/1.1, perhaps the most notable difference is multiplexing. For this reason routing in **Quart** is not mapped to a request but rather to a substream. This interface allows you to `push` handles from a specific path without redefining them.
 
 ## Write a middleware
