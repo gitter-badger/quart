@@ -4,7 +4,7 @@
   "description": "Fastest, baddest and most experimental HTTP/2 framework for Node.js",
   "main": "Quart.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --expose-http2 ./node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/init.js"
   },
   "repository": {
     "type": "git",
@@ -19,12 +19,18 @@
     "Quart"
   ],
   "engines": {
-    "node" : ">=8.4.0"
+    "node": ">=8.4.0"
   },
   "author": "Schahriar SaffarShargh <info@schahriar.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/schahriar/quart/issues"
   },
-  "homepage": "https://github.com/schahriar/quart#readme"
+  "homepage": "https://github.com/schahriar/quart#readme",
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "istanbul": "^1.1.0-alpha.1",
+    "mocha": "^3.5.0",
+    "portscanner": "^2.1.1"
+  }
 }
