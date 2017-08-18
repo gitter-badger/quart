@@ -1,22 +1,22 @@
 {
-  "name": "funl",
+  "name": "quart",
   "version": "0.1.0",
   "description": "Fastest, baddest and most experimental HTTP/2 framework for Node.js",
-  "main": "funl.js",
+  "main": "Quart.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/schahriar/funl.git"
+    "url": "git+https://github.com/schahriar/quart.git"
   },
   "keywords": [
     "http/2",
     "fast",
     "sendFile",
     "http2",
-    "funl.js",
-    "funl"
+    "quartjs",
+    "Quart"
   ],
   "engines": {
     "node" : ">=8.4.0"
@@ -24,7 +24,7 @@
   "author": "Schahriar SaffarShargh <info@schahriar.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/schahriar/funl/issues"
+    "url": "https://github.com/schahriar/quart/issues"
   },
-  "homepage": "https://github.com/schahriar/funl#readme"
+  "homepage": "https://github.com/schahriar/quart#readme"
 }

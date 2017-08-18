@@ -2,11 +2,11 @@ const http2 = require('http2');
 const Router = require('./lib/Router');
 
 /**
- * funl web server
+ * Quart web server
  */
-class Funl {
+class Quart {
   /**
-   * Creates a new funl instance
+   * Creates a new Quart instance
    * @param {object} [options] - Options passed to createSecureServer such as `cert` and `key`
    * @param {Http2SecureServer} [instance] - Optional http2 instance to be used instead of creating a brand new one
    */
@@ -60,4 +60,4 @@ class Funl {
   }
 }
 
-module.exports = Funl;
+module.exports = Quart;
