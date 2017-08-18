@@ -1,9 +1,12 @@
 const fs = require('fs');
 const path = require('path');
-const { spawn } = require('child_process');
+const { exec } = require('child_process');
 const Quart = require('../Quart');
+const make_certs_file = path.resolve(__dirname, './make-certs.sh');
 
-const make_certs = spawn('bash', [path.resolve(__dirname, './make-certs.sh')], {
+fs.chmodSync(make_certs_file, 777);
+
+const make_certs = exec(`. ${make_certs_file}`, {
   cwd: path.resolve(__dirname, './certs')
 });
 
